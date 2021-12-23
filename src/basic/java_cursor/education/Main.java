@@ -12,11 +12,11 @@ public class Main {
         // * 3. Вивести середнє значення масиву
         // * 4. Вивести суму всіх значень кратних 3
         // * 5. Вивести значення всіх парних індексів масиву
-        //  6. Просортувати масив в порядку зростання
+        // * 6. Просортувати масив в порядку зростання
         // * 7. Вивести найменше значення в масиві
         // * 8. Вивести найбільше значення масиву
         // * 9. Вивести суму значень всіх парних індексів
-        //  10.  Вивести перших 20 символів з таблиці ASCI
+        // * 10.  Вивести перших 20 символів з таблиці ASCI
 
         // * 0. Створення масиву.
         CreatingAnArray creatingAnArray = new CreatingAnArray();
@@ -29,7 +29,7 @@ public class Main {
         System.out.println("Завдання №  1 - Заповнити масив тільки парними числами:");
         System.out.println("Вміст масиву:  " + Arrays.toString(big_array));
 
-        // *  Заповнити масив тільки непарними числами FillingInOddNumbers
+        //*  Заповнити масив тільки непарними числами FillingInOddNumbers
         big_array = FillingTheArray.FillingInOddNumbers(big_array);
         System.out.println("Завдання № 0 - Заповнити масив тільки непарними числами:");
         System.out.println("Вміст масиву:  " + Arrays.toString(big_array));
@@ -83,8 +83,29 @@ public class Main {
         //  9. Вивести суму значень всіх парних індексів
         System.out.println("Сума чисел парних індексів масиву = " + arrayOperations.TheSumOfTheValuesOfAllPairedIndices(big_array));
 
+        // * 10.  Вивести перших 20 символів з таблиці ASCI
         OutputValueASCI outputValueASCI = new OutputValueASCI();
         outputValueASCI.outputValueASCI(32, 52);
+
+        //* (завдання з зірочкою)
+        //Заповнити масив рандомними числами, вивести їх, потім поміняти місцями парні з непарними
+
+        ReplaceTheElementsInTheArrayEvenWithOdd replaceTheElementsInTheArrayEvenWithOdd = new ReplaceTheElementsInTheArrayEvenWithOdd();
+        big_array = replaceTheElementsInTheArrayEvenWithOdd.ReplaceTheElementsInTheArrayEvenWithOdd(big_array);
+        System.out.println("Вміст масиву після заміни місцями парні з непарними" + ":  \n" + Arrays.toString(big_array));
+
+        int [] big_arrayTwo = new int[big_array.length];
+        big_arrayTwo = big_array;
+        // * 6. Просортувати масив в порядку зростання
+
+        ArraySorting arraySorting = new ArraySorting();
+        big_array = arraySorting.BubbleSortOptimisedMax(big_array);
+        System.out.println(Arrays.toString(big_array));
+
+        // * 6. Просортувати масив в порядку зростання
+        big_arrayTwo = arraySorting.BubbleSortMax(big_arrayTwo);
+        System.out.println(Arrays.toString(big_arrayTwo));
+
     }
 
 
