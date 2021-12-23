@@ -35,6 +35,16 @@ public class ReplaceTheElementsInTheArrayEvenWithOdd {
                 big_array[evenIndex[i]] = oddNumber[i];
             }
         }
+        System.out.print("Парні числа масиву:");
+        for (int i = 0; i < evenCount; i++) {
+            System.out.print(evenNumber[i] + " ");
+        }
+        System.out.println();
+        System.out.print("Непарні числа масиву:");
+        for (int i = 0; i < oddCount; i++) {
+            System.out.print(oddNumber[i] + " ");
+        }
+        System.out.println();
         return big_array;
     }
 }

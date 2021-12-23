@@ -97,14 +97,16 @@ public class Main {
         int[] big_arrayTwo = new int[big_array.length];
         big_arrayTwo = big_array;
         // * 6. Просортувати масив в порядку зростання
-
+        System.out.println("Сортування в порядку зростання за алгоритмом бульбашкове сортування № 1");
         ArraySorting arraySorting = new ArraySorting();
         big_array = arraySorting.BubbleSortOptimisedMax(big_array);
         System.out.println(Arrays.toString(big_array));
 
         // * 6. Просортувати масив в порядку зростання
+        System.out.println("Сортування в порядку зростання за алгоритмом бульбашкове сортування № 2");
         big_arrayTwo = arraySorting.BubbleSortMax(big_arrayTwo);
         System.out.println(Arrays.toString(big_arrayTwo));
+        System.out.println("Є можливість порівняти роботу сортувальників.");
 
     }
 
