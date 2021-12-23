@@ -24,8 +24,8 @@ public class Main {
 
 
         FillingTheArray fillingTheArray = new FillingTheArray();
-       // * 1. Заповнити масив тільки парними числами FillingTheArray
-        big_array = fillingTheArray.FillingInEvenNumbers(big_array);
+        // * 1. Заповнити масив тільки парними числами FillingTheArray
+        big_array = FillingTheArray.FillingInEvenNumbers(big_array);
         System.out.println("Завдання №  1 - Заповнити масив тільки парними числами:");
         System.out.println("Вміст масиву:  " + Arrays.toString(big_array));
 
@@ -35,12 +35,12 @@ public class Main {
         System.out.println("Вміст масиву:  " + Arrays.toString(big_array));
 
         // * 2. Заповнити масив рандомними числами FillingWithRandomNumbers
-        big_array = fillingTheArray.FillingWithRandomNumbers(big_array);
+        big_array = FillingTheArray.FillingWithRandomNumbers(big_array);
         System.out.println("Завдання № 2 - Заповнити масив випадковими числами:");
         System.out.println("Вміст масиву:  " + Arrays.toString(big_array));
 
         // * Заповнити масив з консоля числами FillingWithNumbersFromTheConsole
-        big_array = fillingTheArray.FillingWithNumbersFromTheConsole(big_array);
+        big_array = FillingTheArray.FillingWithNumbersFromTheConsole(big_array);
         System.out.println("Завдання № - Заповнити масив з консолю числами:");
         System.out.println("Вміст масиву:  " + Arrays.toString(big_array));
 
@@ -59,7 +59,7 @@ public class Main {
             }
             multiplicity = scan.nextByte();
         }
-        big_array = fillingTheArray.FillingInMultiplicity_Is_setNumbers(big_array,multiplicity);
+        big_array = FillingTheArray.FillingInMultiplicity_Is_setNumbers(big_array, multiplicity);
         System.out.println("Завдання № - Заповнити масив з консолю числами:");
         System.out.println("Вміст масиву:  " + Arrays.toString(big_array));
 
@@ -94,7 +94,7 @@ public class Main {
         big_array = replaceTheElementsInTheArrayEvenWithOdd.ReplaceTheElementsInTheArrayEvenWithOdd(big_array);
         System.out.println("Вміст масиву після заміни місцями парні з непарними" + ":  \n" + Arrays.toString(big_array));
 
-        int [] big_arrayTwo = new int[big_array.length];
+        int[] big_arrayTwo = new int[big_array.length];
         big_arrayTwo = big_array;
         // * 6. Просортувати масив в порядку зростання
 

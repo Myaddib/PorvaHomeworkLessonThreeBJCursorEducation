@@ -2,6 +2,12 @@ package basic.java_cursor.education;
 
 public class ArraySorting {
 
+    private static void swapValues(int[] array, int a, int b) {
+        int temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
+    }
+
     //Бульбашкове сортування
     public int[] BubbleSortMax(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
@@ -54,12 +60,6 @@ public class ArraySorting {
             unsortedBelow = lastSwap;
         }
         return array;
-    }
-
-    private static void swapValues(int[] array, int a, int b) {
-        int temp = array[a];
-        array[a] = array[b];
-        array[b] = temp;
     }
 
 }
