@@ -42,7 +42,7 @@ public class ArrayOperations {
 
     public void TheValueOfAllPairedIndices(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            if (i % 2 == 0 && i != 0) {      // 7.   Вивести найменше значення в масиві
+            if (i % 2 == 0 && i != 0) {
                 System.out.print("ін." + i + "=" + array[i] + ", ");
             }
         }
@@ -52,7 +52,7 @@ public class ArrayOperations {
     public int TheSumOfTheValuesOfAllPairedIndices(int[] array) {
         int symm = 0;
         for (int i = 0; i < array.length; i++) {
-            if (i % 2 == 0 && i != 0) {      // 7.   Вивести найменше значення в масиві
+            if (i % 2 == 0 && i != 0) {
                 symm = symm + array[i];
             }
         }
